@@ -3,7 +3,24 @@
     <head>
         <title>Heart Rate</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            body {
+                background-image: url("images/background.jpg");
+                background-size: cover;        
+                background-repeat: no-repeat; 
+                background-attachment: fixed;  
+                background-position: center; 
+            }
+
+            #header h1, p, h2, table, a {
+                background: rgba(255, 255, 255, 0.7);
+                padding: 10px;
+                border-radius: 8px;
+            }
+        </style>
     </head>
+
     <body>
         <div id="header">
             <h1>Heart Rate Tracker</h1>
@@ -16,6 +33,7 @@
 
         <h2>Daily Heart Rate Check</h2>
         <p>Please enter your current heart rate (BPM)</p>
+
         <input type="number" id="heartRateInput" name="heartrate" placeholder="Beats Per Minute">
         <br><br>
 
@@ -85,5 +103,3 @@
         </script>
     </body>
 </html>
-
-

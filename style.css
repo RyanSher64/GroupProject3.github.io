@@ -29,7 +29,7 @@ body {
 }
 
 body.steps-page {
-    background-image: url("FitRunner.jpg") !important;
+    background-image: url("images/FitRunner.jpg") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,5 +60,6 @@ body.steps-page table td {
     text-align: center;
     border: 1px solid white;
 }
+
 
 

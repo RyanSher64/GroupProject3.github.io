@@ -1,8 +1,26 @@
 body {
-    background: linear-gradient(to right, green 33%, white 33%, white 66%, orange 66%);
-     background-image: url('FitRunner.jpeg'); /
-    background-size: cover;   
-    background-repeat: no-repeat;
-    background-position: center; 
-    color: white;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #138808 33.33%,
+    #FFFFFF 33.33% 66.66%,
+    #ff7c17 66.66%
+  );
+}
+.button-like {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 28px;
+
+  background-color: #6b6b6b;
+  color: white;
+
+ 
+}
+
+
+.button-like:hover {
+  background-color: #daa520; 
+  box-shadow: 0 0 20px #daa520;
 }

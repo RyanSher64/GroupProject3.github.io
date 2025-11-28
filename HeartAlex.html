@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Heart Rate</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Heart Rate Tracker</h1>
+        </div>
+
+        <!-- Photo -->
+        <img src="photos/heartrate.png" alt="Heart Rate Image" width="300">
+
+        <p>Your heart rate is an important part of overall health. Tracking it can help you understand how your body reacts to exercise, stress, and rest.</p>
+
+        <h2>Daily Heart Rate Check</h2>
+        <p>Please enter your current heart rate (BPM)</p>
+        <input type="number" id="heartRateInput" name="heartrate" placeholder="Beats Per Minute">
+        <br><br>
+
+        <button onclick="checkRate()">Check Heart Rate</button>
+
+        <p id="result"></p>
+
+        <h2>Weekly Heart Rate Log</h2>
+        <table border>
+            <tr>
+                <th>Day</th>
+                <th>Average BPM</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>72 BPM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>78 BPM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>75 BPM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>80 BPM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>74 BPM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>69 BPM</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>73 BPM</td>
+            </tr>
+        </table>
+
+        <br>
+        <a href="HomePage.html">Home</a>
+
+        <script>
+            function checkRate() {
+                let bpm = document.getElementById("heartRateInput").value;
+                let result = document.getElementById("result");
+
+                if (bpm === "") {
+                    result.innerHTML = "Please enter a number.";
+                    return;
+                }
+
+                bpm = parseInt(bpm);
+
+                if (bpm < 60) {
+                    result.innerHTML = "Your heart rate is below the normal resting range.";
+                } else if (bpm >= 60 && bpm <= 100) {
+                    result.innerHTML = "Your heart rate is in the normal resting range.";
+                } else {
+                    result.innerHTML = "Your heart rate is above the normal resting range.";
+                }
+            }
+        </script>
+    </body>
+</html>

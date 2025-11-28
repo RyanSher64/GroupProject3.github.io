@@ -8,19 +8,25 @@ body {
     #ff7c17 66.66%
   );
 }
+
 .button-like {
   display: inline-block;
   margin: 10px;
   padding: 12px 28px;
-
   background-color: #6b6b6b;
   color: white;
-
- 
 }
-
 
 .button-like:hover {
   background-color: #daa520; 
   box-shadow: 0 0 20px #daa520;
+}
+
+/* ✅ ONLY the Steps Page gets this */
+.steps-page {
+  background-image: url("FitRunner.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

@@ -26,7 +26,7 @@ body {
 }
 
 body.steps-page {
-    background-image: url("FitRunner.jpg") !important;
+    background-image: url("images/FitRunner.jpg") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,5 +43,6 @@ body.steps-page a {
     padding: 5px;
     border-radius: 5px;
 }
+
 
 

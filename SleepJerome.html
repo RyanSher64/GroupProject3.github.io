@@ -5,14 +5,22 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="header">
+        <div id="content">
+        <div id="header1">
         <h1>Sleep Tracker</h1>
         </div>
+    
         <p>Sleep is an esstential part of recovery for any athlete. It ensurees they perform their best and that is why we have included a sleep tracker with our health and fitness tracker.</p>
+        <br>
         <h2>Nightly Tracker</h2>
         <p>Please enter how much sleep you had last night</p>
-        <input type="number" name="sleep" placeholder="Sleep in hours">
+        <input type="number" name="sleep" id="sleepHours" placeholder="Sleep in hours">
+        <br> 
+        <button onclick="goodSleep()" style="background-color: #eb6a00; color: white; border: none;">Send</button>
         <br>
+        <p id="result"></p>
+        <br>
+
         <table border>
         <h2>Weekly Sleep Tracker</h2>
         <tr>
@@ -48,7 +56,31 @@
             <td>8 Hours 24 Minutes</td>
         </tr>
     </table>
-    <a href="index.html">Home
-    </body>
+    </div>
+    <div id="nav">
+    <button><a href="index.html">Home</button>
+    </div>
 
+        <script>
+            function goodSleep() {
+                let hours = document.getElementById("sleepHours").value;
+                let result = document.getElementById("result");
+
+                if (hours === "") {
+                    result.innerHTML = "Please enter a number.";
+                    return;
+                }
+
+                hours = parseInt(hours);
+
+                if (hours < 6) {
+                    result.innerHTML = "You need more sleep.";
+                } else if (hours >= 6 && hours <= 8) {
+                    result.innerHTML = "You had enough sleep.";
+                } else {
+                    result.innerHTML = "You had too much sleep";
+                }
+            }
+        </script>
+    </body>
 </html>

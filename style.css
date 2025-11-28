@@ -61,4 +61,23 @@ body.steps-page table td {
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.3);
 }
+#content{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header1{
+    text-align: center;
+    padding: 5px 5px; 
+    background-color: #2e8538;
+    color: white;
+}
+
+#nav{
+    padding: 5px;
+    background-color: #eb6a00;
+    color: white;
+}
 

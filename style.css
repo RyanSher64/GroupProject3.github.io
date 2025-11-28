@@ -24,10 +24,11 @@ body {
 
 
 .steps-page {
-  background-image: url("FitRunner.jpeg");
+  background-image: url("FitRunner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 

@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(to right, green 33%, white 33%, white 66%, orange 66%);
+     background-image: url('FitRunner.jpeg'); /
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: white;
+}

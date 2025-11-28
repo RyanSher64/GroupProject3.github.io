@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steps Tracker</title>
+</head>
+<body>
+
+<h1>Steps Tracker</h1>
+
+<H3>Steps are essential for a human to remain in good shape. Whether or not you realise it you more than likely do thousands of steps each day.
+    These steps are key in maintaining a healthy lifestyle and avoiding health conditions such as obesity. Steps and sleep will ensure you can live a long and healthy life.
+</H3>
+<H4>Fill in the table below to see how you have been doing.</H4>
+<script>
+    var mon = 0, tue = 0, wed = 0, thu = 0, fri = 0, sat = 0, sun = 0;
+</script>
+
+<table border="1">
+<tr>
+    <th>Day</th>
+    <th>Steps</th>
+    <th>Add Steps</th>
+</tr>
+
+<tr>
+    <td>Monday</td>
+    <td id="mon">0</td>
+    <td>
+        <button onclick="mon+=1; document.getElementById('mon').innerText=mon;">+1</button>
+        <button onclick="mon+=10; document.getElementById('mon').innerText=mon;">+10</button>
+        <button onclick="mon+=50; document.getElementById('mon').innerText=mon;">+50</button>
+        <button onclick="mon+=100; document.getElementById('mon').innerText=mon;">+100</button>
+        <button onclick="mon+=1000; document.getElementById('mon').innerText=mon;">+1000</button>
+    </td>
+</tr>
+
+<tr>
+    <td>Tuesday</td>
+    <td id="tue">0</td>
+    <td>
+        <button onclick="tue+=1; document.getElementById('tue').innerText=tue;">+1</button>
+        <button onclick="tue+=10; document.getElementById('tue').innerText=tue;">+10</button>
+        <button onclick="tue+=50; document.getElementById('tue').innerText=tue;">+50</button>
+        <button onclick="tue+=100; document.getElementById('tue').innerText=tue;">+100</button>
+        <button onclick="tue+=1000; document.getElementById('tue').innerText=tue;">+1000</button>
+    </td>
+</tr>
+
+<tr>
+    <td>Wednesday</td>
+    <td id="wed">0</td>
+    <td>
+        <button onclick="wed+=1; document.getElementById('wed').innerText=wed;">+1</button>
+        <button onclick="wed+=10; document.getElementById('wed').innerText=wed;">+10</button>
+        <button onclick="wed+=50; document.getElementById('wed').innerText=wed;">+50</button>
+        <button onclick="wed+=100; document.getElementById('wed').innerText=wed;">+100</button>
+        <button onclick="wed+=1000; document.getElementById('wed').innerText=wed;">+1000</button>
+    </td>
+</tr>
+
+<tr>
+    <td>Thursday</td>
+    <td id="thu">0</td>
+    <td>
+        <button onclick="thu+=1; document.getElementById('thu').innerText=thu;">+1</button>
+        <button onclick="thu+=10; document.getElementById('thu').innerText=thu;">+10</button>
+        <button onclick="thu+=50; document.getElementById('thu').innerText=thu;">+50</button>
+        <button onclick="thu+=100; document.getElementById('thu').innerText=thu;">+100</button>
+        <button onclick="thu+=1000; document.getElementById('thu').innerText=thu;">+1000</button>
+    </td>
+</tr>
+
+<tr>
+    <td>Friday</td>
+    <td id="fri">0</td>
+    <td>
+        <button onclick="fri+=1; document.getElementById('fri').innerText=fri;">+1</button>
+        <button onclick="fri+=10; document.getElementById('fri').innerText=fri;">+10</button>
+        <button onclick="fri+=50; document.getElementById('fri').innerText=fri;">+50</button>
+        <button onclick="fri+=100; document.getElementById('fri').innerText=fri;">+100</button>
+        <button onclick="fri+=1000; document.getElementById('fri').innerText=fri;">+1000</button>
+    </td>
+</tr>
+
+<tr>
+    <td>Saturday</td>
+    <td id="sat">0</td>
+    <td>
+        <button onclick="sat+=1; document.getElementById('sat').innerText=sat;">+1</button>
+        <button onclick="sat+=10; document.getElementById('sat').innerText=sat;">+10</button>
+        <button onclick="sat+=50; document.getElementById('sat').innerText=sat;">+50</button>
+        <button onclick="sat+=100; document.getElementById('sat').innerText=sat;">+100</button>
+        <button onclick="sat+=1000; document.getElementById('sat').innerText=sat;">+1000</button>
+    </td>
+</tr>
+
+<tr>
+    <td>Sunday</td>
+    <td id="sun">0</td>
+    <td>
+        <button onclick="sun+=1; document.getElementById('sun').innerText=sun;">+1</button>
+        <button onclick="sun+=10; document.getElementById('sun').innerText=sun;">+10</button>
+        <button onclick="sun+=50; document.getElementById('sun').innerText=sun;">+50</button>
+        <button onclick="sun+=100; document.getElementById('sun').innerText=sun;">+100</button>
+        <button onclick="sun+=1000; document.getElementById('sun').innerText=sun;">+1000</button>
+    </td>
+</tr>
+
+</table>
+
+<H3> 
+    Check out the podcast below to learn how walking can benefit you.
+</H3>
+<audio controls>
+  <source src="HealthWalking.mp3" type="audio/mpeg">
+</audio>
+<H1>
+
+</H1>
+<a href="HomePage.html">Return Home</a>
+
+</body>
+</html>

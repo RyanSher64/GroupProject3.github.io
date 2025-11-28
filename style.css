@@ -10,6 +10,7 @@ body {
         #FFFFFF 33.33% 66.66%,
         #ff7c17 66.66%
     );
+    font-family: Arial, sans-serif;
 }
 
 .button-like {
@@ -18,6 +19,8 @@ body {
     padding: 12px 28px;
     background-color: #6b6b6b;
     color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .button-like:hover {
@@ -26,7 +29,7 @@ body {
 }
 
 body.steps-page {
-    background-image: url("iamge/FitRunner.jpg") !important;
+    background-image: url("FitRunner.jpg") !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,13 +40,11 @@ body.steps-page {
 body.steps-page h1,
 body.steps-page h3,
 body.steps-page h4,
-body.steps-page table,
 body.steps-page a {
-    background-color: transparent;
     color: white;
-    padding: 0;
-    border-radius: 0;
+    background-color: transparent;
     margin: 10px auto;
+    padding: 0;
 }
 
 body.steps-page table {
@@ -59,6 +60,5 @@ body.steps-page table td {
     text-align: center;
     border: 1px solid white;
 }
-
 
 

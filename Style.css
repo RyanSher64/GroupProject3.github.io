@@ -22,7 +22,7 @@ body {
   box-shadow: 0 0 20px #daa520;
 }
 
-/* ✅ ONLY the Steps Page gets this */
+
 .steps-page {
   background-image: url("FitRunner.jpeg");
   background-size: cover;
@@ -30,3 +30,4 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
